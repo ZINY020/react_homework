@@ -1,11 +1,72 @@
-.App.dark {
-  background-color: #333;
-  color: #fff;
+.todoLayout {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App.dark button {
-  background-color: #555;
-  color: #fff;
+.todoLayoutWrapper {
+  position: relative;
+  width: 360px;
+  height: 520px;
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #e9e9e9;
+}
+.todoItem {
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
 }
 
-/* 추가적인 다크 모드 스타일 정의 */
+.todoItemTitle {
+  font-size: 18px;
+}
+
+.btnWrapper {
+  position: absolute;
+  right: 32px;
+}
+
+.btn {
+  margin-left: 8px;
+}
+
+.btnDark {
+  position: absolute;
+  width: 100%;
+  margin-top: 16px;
+  bottom: 0;
+  left: 0;
+  height: 52px;
+  border-top: 1px solid #efefef;
+  background: #333;
+  color: #fff;
+  font-weight: 900;
+}
+.formLayout {
+  width: 100%;
+
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  height: 50px;
+  background: #efefef;
+  /* padding: 18px 32px; */
+  box-sizing: border-box;
+}
+
+.formInput {
+  box-sizing: border-box;
+  height: 50px;
+  width: 80%;
+}
+.formBtn {
+  box-sizing: border-box;
+  height: 50px;
+  width: 20%;
+}
